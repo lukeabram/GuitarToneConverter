@@ -101,8 +101,16 @@ class audioSpecs:
             # if count > 0:
             #     break
     
-    
-    
+    def storePhase(spec, fn):
+        phase = np.empty((len(spec), len(spec[0])))
+        for i in len(spec):
+            for j in len(spec[0]):
+                if spec[i, j].real < 0:
+                    phase[i, j] = 10
+                if spec[i, j].imag < 0:
+                    phase[i, j] += 1
+        np.savetxt(fn, phase)
+                
     def imageToAudio(self, outputfn, folder, index):
         #Open image as array
         spec2 = np.array(Image.open('./' + folder + '/' + str(index) + '.png'))

@@ -101,10 +101,10 @@ class audioSpecs:
             # if count > 0:
             #     break
     
-    def storePhase(spec, fn):
+    def storePhase(self, spec, fn):
         phase = np.empty((len(spec), len(spec[0])))
-        for i in len(spec):
-            for j in len(spec[0]):
+        for i in range(len(spec)):
+            for j in range(len(spec[0])):
                 if spec[i, j].real < 0:
                     phase[i, j] = 10
                 if spec[i, j].imag < 0:
@@ -158,14 +158,15 @@ a = audioSpecs()
 
 
 
-# sig2, fs = librosa.load('lowoct.wav', sr=44100)
+sig2, fs = librosa.load('disco.wav', sr=44100)
 
 # # Create spectrogram from 1D array
-# spec = librosa.stft(sig2)
+spec = librosa.stft(sig2)
 # 
 # a.makeSpec('disco.wav', 'trainA')
-a.makeSpec('major.wav', 'piano/trainA')
-a.makeSpec('minor.wav', 'piano/trainB')
+# a.makeSpec('major.wav', 'piano/trainA')
+# a.makeSpec('minor.wav', 'piano/trainB')
+a.storePhase(spec, 'phase.txt')
 # a.makeSpec('electric.wav', 'electric')
 # a.imageToAudio('traina.wav', 'trainA', 0)
 

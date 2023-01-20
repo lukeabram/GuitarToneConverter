@@ -1,4 +1,4 @@
-#gtc
+# gtc
 
 
 
@@ -6,7 +6,7 @@ This project utilizes spectrograms and the CycleGAN to perform audio translation
 
 
 
-##intchord
+## intchord
 
 Preliminary test on the CycleGAN to convert sine wave perfect 5ths to major chords.
 
@@ -14,14 +14,14 @@ Check the output in the results folder.
 
 
 
-##acoutric
+## acoutric
 
 Attempting to convert acoustic guitar to electric guitar.
 
 
-###mk1
+### mk1
 Attempted to use a dataset of real acoustic and electric guitar.
 
 
-###mk2
+### mk2
 Atempted to use a dataset of virtual instruments.

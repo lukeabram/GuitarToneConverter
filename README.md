@@ -24,9 +24,5 @@ Attempted to use a dataset of real acoustic and electric guitar.
 
 
 ### mk2
-<<<<<<< HEAD
-Atempted to use a dataset of virtual instruments.
-
-=======
 Atempted to use a dataset of virtual instruments. Tested both STFT and CQT methods of spectrogram creation.
->>>>>>> bde85ac877700ef5ba48761c28ff3b4056f1c9bc
+

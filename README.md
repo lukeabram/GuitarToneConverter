@@ -2,7 +2,7 @@
 
 
 
-This project utilizes spectrograms and the CycleGAN to perform audio translation between different instruments.
+This project utilizes spectrograms and the CycleGAN to perform audio translation between different instruments through image to image conversions.
 
 Research findings and audio examples are in the results directory
 

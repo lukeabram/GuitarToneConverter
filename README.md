@@ -4,7 +4,8 @@
 
 This project utilizes spectrograms and the CycleGAN to perform audio translation between different instruments through image to image conversions.
 
-Research findings and audio examples are in the results directory
+Research findings and audio examples are in the results directory.
+Full report [here](results/Final%20Paper.pdf)
 
 ## intchord
 
